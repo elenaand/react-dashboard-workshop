@@ -40,7 +40,7 @@ Props (properties) er attributter som kan sendes med til et React-komponent. Det
 Children er et slags spesialprop. Alt som er definert mellom åpne og lukketaggen til et React-komponent vil være tilgjengelige i komponentet via `props.children`.
 
 ### 2.1
-Åpne `Widget.tsx`, og sammenlign den med Lectures-komponenten vi nettopp var i. Du ser kanskje at de er ganske like?
+Åpne `Widget.jsx`, og sammenlign den med Lectures-komponenten vi nettopp var i. Du ser kanskje at de er ganske like?
 
 I `Lectures.jsx`, fjern de taggene som er like i filene og erstatt med `<Widget>`.
 
@@ -118,7 +118,7 @@ Nå vises lista med oppgaver til det første faget hele tiden. Bruk `activeTab`-
 For å se hvilke øvninger som er godkjent kan du legge til klassen `approvedAssignment` for de fagene som godkjent.
 
 ### 5.5
-Vi kan også legge til en statusmeldinng for om alle fagene er godkjent eller ikke. Implementer isSubjectApproved-metoden, og kommenter inn den relevante koden i return-metoden.
+Vi kan også legge til en statusmelding for om alle fagene er godkjent eller ikke. Implementer isSubjectApproved-metoden, og kommenter inn den relevante koden i return-metoden.
 
 ### Ekstra oppgave?
 Legg til funksjonalitet for å markere øvinger som godkjent.
