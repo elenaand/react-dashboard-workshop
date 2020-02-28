@@ -19,7 +19,9 @@ body {
 
 .widget {
   padding: 1.25rem;
-  background: #F8DFF2;
+  background: #B35D79;
+  border: #6AB7CC;
+  color: #FFF9B8;
   border-radius: 0.3125rem;
 }
 
@@ -37,15 +39,17 @@ body {
 }
 
 .widget:nth-child(3n+1) {
-  background: #F8DFF2;
+  background: #B35D79;
+  color: #fff;
 }
 
 .widget:nth-child(3n+2) {
-  background: #EEE3FF;
+  background: #6AB7CC;
 }
 
 .widget:nth-child(3n+3) {
-  background: #CBBBE2;
+  background: #FF9EBE;
+  color: #fff;
 }
 
 .widget ul {
@@ -71,15 +75,18 @@ body {
 }
 
 .tabs button.activeTab {
-  background: #CBBBE2;
+  background: #FFF9B8;
 }
 
 .subjectStatus {
   font-weight: 700;
+  background-color:#fff;
+  padding: 10px;
 }
 
 .approvedAssignment {
   text-decoration: line-through;
+  color: green;
 }
 
 img {
