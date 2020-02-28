@@ -20,8 +20,11 @@ const Lectures = () => (
       {forelesninger2.map(forelesning => 
         <li key={forelesning[0]}>
           <b>
-            📆 {forelesning[0]} - {forelesning[1]}
-          </b>  👉🏼{forelesning[2]}
+            <span role="img" aria-label="calendar">📆 </span>
+            {forelesning[0]} - {forelesning[1]}
+          </b> {' '}
+          <span role="img" aria-label="hand pointing right">👉🏼</span>
+          {forelesning[2]}
         </li>)}
     </ul>
   </Widget>

@@ -30,7 +30,7 @@ const Assignments = () => {
       </div>
       <div className="subjectStatus">
         {
-            isSubjectApproved() ? 'Du er ferdig!' : 'Du er ikke helt i mål enda...'
+          isSubjectApproved() ? 'Du er ferdig!' : `Du må få godkjent minst ${subjects[activeTab].assignments.filter(assignment => assignment.approved) - subjects[activeTab].mandatoryApprovals} øvinger til`
         }
       </div>
       <ul>

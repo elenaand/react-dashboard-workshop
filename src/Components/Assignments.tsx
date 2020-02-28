@@ -9,8 +9,9 @@ const Assignments = () => {
 
   const updateActiveTab = (index: number) => {
     // Oppgave 5.1: Oppdater activeTab staten
-    setActiveTab(index);
-    console.log("Aktiv: ", index, subjects[index]);
+    if (activeTab !== index) {
+      setActiveTab(index);
+    }
   };
 
   const isSubjectApproved = () => {
@@ -19,7 +20,8 @@ const Assignments = () => {
     // false avhengig om faget er bestått eller ikke
     const currentSubjects = subjects[activeTab];
     const antallGodkjenteOvinger = currentSubjects.assignments.filter(assignment => assignment.approved)
-    return antallGodkjenteOvinger.length >= currentSubjects.mandatoryApprovals
+    //return antallGodkjenteOvinger.length >= currentSubjects.mandatoryApprovals
+    return currentSubjects.mandatoryApprovals - antallGodkjenteOvinger.length
   };
 
   return (
@@ -34,7 +36,8 @@ const Assignments = () => {
       </div>
       <div className="subjectStatus">
         {
-            isSubjectApproved() ? 'Du er ferdig!' : 'Du er ikke helt i mål enda...'
+            isSubjectApproved() === 0 ? 'Du er ferdig!' : `Du må gjøre minst ${isSubjectApproved()} ${isSubjectApproved() === 1 ? 'øving' : 'øvinger'} til.`
+
         }
       </div>
       <ul>
@@ -49,6 +52,9 @@ const Assignments = () => {
           ))
         }
       </ul>
+      <div>
+        Dette faget krever <strong>{subjects[activeTab].mandatoryApprovals} {subjects[activeTab].mandatoryApprovals === 1 ? 'godkjent' : 'godkjente'}</strong> øvinger for å bestå øvingsopplegget
+      </div>
     </Widget>
   );
 }

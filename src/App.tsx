@@ -20,7 +20,7 @@ const App = () => {
   return (
     <div>
       <h1 className="header">
-        🦦 ✨ Elena sitt {randomAdjektiv} dashboard! ✨ 🦥
+        <span role="img" aria-label="otter and sparkles">🦦 ✨</span> Elena sitt {randomAdjektiv} dashboard! <span role="img" aria-label="sparkles and sloth">✨ 🦥</span>
       </h1>
       <div className="dashboardRow">
         <Lectures />

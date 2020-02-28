@@ -37,5 +37,32 @@ export const subjects: Subject[] = [
         approved: false,
       },
     ]
+  },
+    {
+    name: 'OOP',
+    mandatoryApprovals: 4,
+    assignments: [
+      {
+        name: 'OOP Øving 1',
+        approved: true,
+      },
+      {
+        name: 'OOP Øving 2',
+        approved: true,
+      },
+      {
+        name: 'OOP Øving 3',
+        approved: false,
+      },
+      {
+        name: 'OOP Øving 4',
+        approved: false,
+      },
+      {
+        name: 'OOP Øving 5',
+        approved: false,
+      },
+      
+    ]
   }
 ];

@@ -1,5 +1,4 @@
 import React from 'react';
- 
 
 const Widget: React.FC<{title: string}> = ({title, children}) => (
   <div className="widget">

@@ -3,7 +3,7 @@ import Widget from './Widget';
 
 const YesNo = () => {
   const [input, setInput] = React.useState('');
-  const [question, setQuestion] = React.useState('');
+  const [question, setQuestion] = React.useState('Spørsmål?');
   const [imageUrl, setImageUrl] = React.useState();
 
   const updateInput = (evt: any) => {
