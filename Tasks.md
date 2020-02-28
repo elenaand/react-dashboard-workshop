@@ -118,7 +118,7 @@ Nå vises lista med oppgaver til det første faget hele tiden. Bruk `activeTab`-
 For å se hvilke øvninger som er godkjent kan du legge til klassen `approvedAssignment` for de fagene som godkjent.
 
 ### 5.5
-Vi kan også legge til en statusmeldinng for om alle fagene er godkjent eller ikke. Implementer isSubjectApproved-metoden, og kommenter inn den relevante koden i return-metoden.
+Vi kan også legge til en statusmelding for om alle fagene er godkjent eller ikke. Implementer isSubjectApproved-metoden, og kommenter inn den relevante koden i return-metoden.
 
 ### Ekstra oppgave?
 Legg til funksjonalitet for å markere øvinger som godkjent.

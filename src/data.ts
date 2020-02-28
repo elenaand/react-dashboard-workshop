@@ -20,7 +20,7 @@ export const subjects: Subject[] = [
       },
       {
         name: 'AI Øving 2',
-        approved: true,
+        approved: false,
       },
     ]
   },
